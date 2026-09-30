@@ -1,0 +1,88 @@
+:root { --color-azul-boton: #007bff;
+	--color-gris-fondo: #f4f4f6;         
+  	--color-fondo-blanco: #ffffff;        
+  	--color-texto: #1a1a1a;         
+ 	--color-texto-secundario: #666666;
+	--color-error: #d9534f;
+  	--fuente-principal: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  --max-ancho-contenedor: 1200px;
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+html, body {
+  height: 100%;
+}
+
+
+body {
+  font-family: var(--fuente-principal);
+  background-color: var(--color-gris-fondo);
+  color: var(--color-texto);
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+
+a {
+  color: var(--color-azul-boton);
+  text-decoration: none;
+}
+
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+header {
+  background-color: var(--color-fondo-blanco);
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+main {
+  flex: 1;
+  width: 100%;
+  max-width: var(--max-ancho-contenedor);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: var(--color-texto-secundario);
+  font-size: 0.875rem;
+  background-color: transparent;
+}
+
+
+@media (max-width: 768px) {
+  header {
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  main {
+    padding: 1.5rem 1rem;
+  }
+}
