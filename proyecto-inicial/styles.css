@@ -1,0 +1,17 @@
+:root {
+  --color-dev2-acento: #17a2b8; /* Variable propia de Dev 2 */
+}
+
+/* --- Estilos base --- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background-color: #f4f4f6; color: #1a1a1a; display: flex; flex-direction: column; min-height: 100vh; }
+header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e5e5e5; display: flex; gap: 1.5rem; align-items: center; }
+header nav { display: flex; gap: 1.5rem; }
+main { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+footer { text-align: center; padding: 1.5rem; color: #666666; font-size: 0.875rem; }
+
+/* --- Estilos propios de Dev 2 (Detalle y Bitácora) --- */
+.titulo-detalle { margin-bottom: 1.5rem; }
+.caja-detalle { background-color: #ffffff; border-left: 5px solid var(--color-dev2-acento); padding: 1.5rem; border-radius: 6px; margin-bottom: 1.5rem; }
+.caja-bitacora { background-color: #ffffff; border: 1px solid #e5e5e5; padding: 1.5rem; border-radius: 6px; }
+.caja-bitacora ul { margin-top: 0.5rem; padding-left: 1.2rem; }
