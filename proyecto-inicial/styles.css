@@ -1,0 +1,17 @@
+:root {
+  --color-dev1-acento: #007bff; /* Variable propia de Dev 1 */
+}
+
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: system-ui, sans-serif; background-color: #f4f4f6; color: #1a1a1a; display: flex; flex-direction: column; min-height: 100vh; }
+header { background-color: #ffffff; padding: 1rem 2rem; border-bottom: 1px solid #e5e5e5; display: flex; gap: 1.5rem; align-items: center; }
+header nav { display: flex; gap: 1.5rem; }
+main { flex: 1; width: 100%; max-width: 1200px; margin: 0 auto; padding: 2.5rem 1.5rem; }
+footer { text-align: center; padding: 1.5rem; color: #666666; font-size: 0.875rem; }
+
+
+.titulo-seccion { margin-bottom: 1.5rem; }
+.catalogo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+.tarjeta-taller { background-color: #ffffff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 1.5rem; }
+.btn-dev1 { display: inline-block; margin-top: 1rem; background-color: var(--color-dev1-acento); color: white; padding: 0.6rem 1.2rem; border-radius: 6px; text-decoration: none; }
